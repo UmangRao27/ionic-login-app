@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="card-wrapper">
+
+    <ion-card class="login-card">
+
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+        <ion-text>
+          <h2>Login</h2>
+        </ion-text>
+
+        <ion-item>
+          <ion-label position="floating">Username</ion-label>
+          <ion-input formControlName="username"></ion-input>
+        </ion-item>
+        <ion-text color="danger" *ngIf="isInvalid('username')">
+            <small>Username is required</small>
+        </ion-text>
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-text color="danger" *ngIf="isInvalid('password')">
+            <small>Password is required</small>
+        </ion-text>
+
+        <ion-button expand="block" type="submit">
+          Login
+        </ion-button>
+
+      </form>
+
+
+    </ion-card>
+  </div>
+
+  
+</ion-content>
