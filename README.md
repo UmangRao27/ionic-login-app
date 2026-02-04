@@ -49,35 +49,4 @@ This project is built with **NgModule-based Ionic architecture** (non-standalone
 
 ```bash
 git clone https://github.com/radhikamotisariya/ionic-login-app.git
-cd ionic-login-app```
-
-2. **Install dependencies**
-
-```bash
-npm install```
-
-3. **Run the app in the browser**
-
-```bash
-ionic serve```
-
-## 📱 Build APK for Android
-
-1. **Build the Ionic project**
-
-```bash
-ionic build```
-
-2. **Copy web assets to Android platform**
-
-```bash
-npx cap copy android```
-
-3. **Open Android Studio**
-
-```bash
-npx cap open android```
-
-4. **Build APK and run on your device**
-
-Make sure Android Studio + Java SDK are installed.
+cd ionic-login-app
